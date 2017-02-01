@@ -5,4 +5,4 @@ Chrome Extension for places where youtube is blocked. Makes using www.playit.pk 
 1. Download the contents in to a single folder.
 2. Go to 'chrome://extensions/' in Google Chrome.
 3. Enable 'Developer Mode'.
-4. 'Load unpacked extension' and choose the folder containing the contents.
+4. 'Load unpacked extension' and choose the folder containing the contents. (Note: In case there is an error about Thumbs.db, view hidden files in the explorer and delete 'Thumbs.db' in the 'icons' folder.)
