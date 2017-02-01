@@ -1,0 +1,58 @@
+{
+	"name": "Playit Now",
+
+	"version": "2.10.1",
+	
+	"manifest_version": 2,
+	
+	"description": "For Places where www.youtube.com is blocked",
+	
+	"icons":
+	{
+		"16": "icons/myicon16.png",
+		"48": "icons/myicon48.png",
+		"128": "icons/myicon128.png",
+		"192": "icons/myicon192.png"
+	},
+	
+	"default_locale": "en",
+	
+	"background":
+	{
+		"scripts": [ "background.js"]
+	},
+	
+	"browser_action":
+	{
+		"default_icon": "icons/myicon192.png",
+		"default_title": "Playit Now",
+		"default_popup": "browser_action.html"
+	},
+	
+	"permissions": [
+		"clipboardRead",
+		"activeTab",
+		"tabs",
+		"http://playit.pk/"
+		],
+	
+	"content_scripts": [
+		{
+			"matches": ["https://*/*", "http://*/*"],
+			"js": ["jquery-2.1.4.js", "content_script.js"],
+			"run_at" : "document_idle",
+            "all_frames" : false
+		}
+	],
+
+	"commands": {
+          "_execute_browser_action": {
+            "suggested_key": {
+              "windows": "Ctrl+Y",
+              "mac": "Command+Y",
+              "chromeos": "Ctrl+Y",
+              "linux": "Ctrl+Y"
+            }
+      	}
+    }
+}

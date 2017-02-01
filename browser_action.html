@@ -1,0 +1,115 @@
+<!doctype html>
+<!--Mady by Abdul Wasae Tariq -->
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body style="" class="">
+	<div id="header">
+		<a href="https://chrome.google.com/webstore/detail/playit-now/gobodpbikolgnpkekmniampkcadbgodj" title="Spread the love">
+			<img id="header-logo" src="icons/logo-red.png">
+		</a>
+		<div id="header-nav">
+		<a class="btn-floating waves-effect waves-light red" id="share-icon" title="Was this extension helpful? Let your friends know about it too"><i class="material-icons">thumb_up</i></a>
+		&nbsp
+		<a class="btn-floating waves-effect waves-light red" id="info-icon" title="Learn more on how this extension can be helpful"><i class="material-icons">info_outline</i></a>
+		</div>
+	</div>
+	
+	<div id="main-page">
+		<div id="main-linkFetches"  class="hoverable">
+			<div class="main-linkFetches">
+				<div class="collection with-header" id="youtubeLinks">
+					<li class="collection-header" style="list-style-type: none; padding-top: 5px; padding-bottom: 5px"><h5 class=" flow-text" style="margin: 0px 0px 0px 0px;">Linked Youtube Videos</h5></li>
+					 <a href="#!" class="collection-item red-text" style=" color: red; padding-top: 0px; padding-bottom: 0px; cursor: not-allowed">No Linked Youtube videos found</a>
+		      	</div>
+			</div>
+			<div class="main-linkFetches">
+				<div class="collection with-header" id="youtubeEmbeds">
+					<li class="collection-header" style="list-style-type: none; padding-top: 5px; padding-bottom: 5px"><h5 class="flow-text" style="margin: 0px 0px 0px 0px;">Embedded Youtube Videos</h5></li>
+			        <a href="#!" class="collection-item red-text" style=" color: red; padding-top: 0px; padding-bottom: 0px; cursor: not-allowed">No Embedded Youtube videos found</a>
+		      	</div>
+			</div>
+		</div>
+		<div id="main-manualVideoID" class="hoverable">
+			<h5 class="flow-text">(Or) paste the 11-character video ID</h5>
+			<label> www.playit.pk/watch?v= </label>
+			<div class="input-field" id="manualVideoID-inputFieldDiv">
+    		    <input id="manualVideoID-videoID" type="text" class="validate">
+        	</div>
+			<button type="button" id="manualVideoID-button" class="waves-effect waves-light red btn" title="or press Enter">Playit Now</button>
+		</div>
+
+		<div id="main-manualQuery" class="hoverable">
+			<h5 class="flow-text">(Or) simply search with keywords on www.playit.pk</h5>
+			<label> www.playit.pk/search?q= </label>
+			<div class="input-field" id="manualQuery-inputFieldDiv">
+    		    <input id="manualQuery-query" type="text" class="validate">
+        	</div>
+			<button type="button" id="manualQuery-button" class="waves-effect waves-light red btn" title="or press Enter">Search</button>
+		</div>
+
+		<div id="tip" title="Use [Ctrl/Command + Y] to trigger this extension from the keyboard">Shortcut: [Ctrl+Y]</div>
+		<div id="version">v 2.1</div>
+	</div>
+	<div id="info-page" style="display: none">
+		<blockquote>
+			<p class="flow-text"><strong>"PLAYIT NOW" </strong>Makes it easier to accept www.playit.pk as an alternative to www.youtube.com. Now access youtube videos with only 1 extra click than it would take if www.youtube.com were accessible.</p>
+		</blockquote>
+		<br>
+		<h5><strong>Salient Features</strong></h5>
+		<ul style="font-size: 14px;" class="flow-text" id="staggered-ul">
+			<li style="margin-top: 20px;"><strong> &nbsp &nbsp Captures Youtube URLs from Google search results: </strong> Now you won't have to go through the trouble of all those extra clicks and copying/pasting of links from here to there
+				<img id="link-illus" class="illustration-img" src="icons/link-illustration.png">
+			</li>
+			<li style="margin-top: 20px;"><strong> &nbsp &nbsp Captures Embedded Youtube videos in webpages: </strong> Achieve riddance from situations where your web-surfing is barred by that greyed-out embedded youtube video
+				<img id="embed-illus" class="illustration-img" src="icons/embed-illustration.png">
+			</li>
+			<li style="margin-top: 20px;"><strong> &nbsp &nbsp Manual video ID entry option: </strong> Came across a rare kind of youtube URL (e.g; http://youtu.be/Zs5pys2uwbQ) that was not captured? No worries. Just copy that 11 characters long youtube video ID (found in every youtube URL) and use the manual entry feature
+			<img id="embed-illus" class="illustration-img" src="icons/videoID-illustration.png">
+			</li>
+			<li style="margin-top: 20px;"><strong> &nbsp &nbsp Directly search on www.playit.pk: </strong> If nothing else, you can search youtube videos directly, using the search option
+			<img id="embed-illus" class="illustration-img" src="icons/query-illustration.png">
+			</li>
+		</ul>
+		<br>
+		<h5><strong>Additional Tips</strong></h5>
+		<ul style="font-size: 14px;" class="flow-text" id="staggered-ul">
+			<li style="margin-top: 20px;"><strong> &nbsp &nbsp Use keyboard shortcut to trigger this extension: </strong> You can use the Keyboard shortcut, 'Ctrl+Y' ('Command+Y' for MAC), to activate this extension. You can also change the key combination using the UI in chrome://extensions -> Keyboard Shortcuts (scroll to the end)
+			</li>
+			<li style="margin-top: 20px;"><strong> &nbsp &nbsp Press Enter to press buttons: </strong> You can use the 'Enter' Key to trigger the respective button in the currently focused section inside the extension
+			</li>
+			<li style="margin-top: 20px;"><strong> &nbsp &nbsp Automatic clipboard checking: </strong> This extension will automatically look-up for valid youtube video IDs (e.g; Zs5pys2uwbQ) if copied onto your clipboard and paste it for you in the 'Video ID entry' section
+			</li>
+		</ul>
+		<br>
+		<br>
+		<blockquote>
+			<p><strong>Contact</strong></p>
+			<p><strong>email: </strong> awasae3@gmail.com (use subject: 'Playit Now Extension')</p>
+			<p><strong>linkedin: </strong> https://pk.linkedin.com/in/abdulwasae</p>
+			<p><strong>google+: </strong> https://plus.google.com/+AbdulWasaeTariq</p>
+		</blockquote>
+
+	</div>
+	<div id="share-page" style="display: none">
+		<blockquote>
+			<p class="flow-text"><strong>"PLAYIT NOW" </strong>Makes it easier to accept www.playit.pk as an alternative to www.youtube.com. Now access youtube videos with only 1 extra click than it would take if www.youtube.com were accessible.</p>
+		</blockquote>
+		<br>
+		<p class="flow-text">If you think this extension made your life a little easier, consider spreading word about it with your friends. Use the following URL for sharing this extension:</p>
+		<input type="text" id="share-link" readonly value="https://chrome.google.com/webstore/detail/playit-now/gobodpbikolgnpkekmniampkcadbgodj" style="width: 560px; font-size: 13px; color: blue;">
+		<button type="button" id="copy-share-link" class="waves-effect waves-light red btn">Copy URL</button>
+	</div>
+	
+	<div id="footer">Made with love by <span id="my-name">Abdul Wasae Tariq</span></div>
+
+	<script type="text/javascript" src="jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="browser_action_main.js"></script>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>
